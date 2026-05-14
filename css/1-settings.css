@@ -1,0 +1,15 @@
+:root {
+    --cream:               #F9F5EF;
+    --sand-light:          #E8D9C4;
+    --sand-warm:           #C4A882;
+    --brown-mid:           #7A5C3A;
+    --brown-deep:          #3D2410;
+    --accent:              #B56259;
+    --accent-light:        #F5E8E6;
+    --accent-dark:         #8C3E35;
+
+    --transition-base:     0.2s ease;
+    --letter-spacing-btn:  0.14em;
+    --letter-spacing-eyebrow: 0.22em;
+    --radius-btn:          1px;
+}
