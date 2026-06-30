@@ -14,3 +14,7 @@ img {
         scroll-behavior: smooth;
     }
 }
+
+p {
+    margin-bottom: 1em;
+}

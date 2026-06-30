@@ -507,6 +507,13 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    color: var(--sand-light);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.about-right .btn {
+    text-align: center;
 }
 
 .about-right .eyebrow {
@@ -517,6 +524,11 @@ nav {
 }
 .about-right .section-title {
     color: var(--cream);
+}
+
+.about-right ul {
+    margin: 0 0 2em 1em;
+    list-style: initial;
 }
 
 .values {
@@ -658,7 +670,7 @@ dd.value-desc {
     transform: none;
 }
 
-.cta-title {
+.cta-title h2 {
     font-family: 'Cormorant Garamond', serif;
     font-size: clamp(2.2rem, 3.5vw, 3.5rem);
     font-weight: 300;
@@ -672,6 +684,12 @@ dd.value-desc {
     font-style: italic;
     color: #fff;
     opacity: 0.75;
+}
+
+.cta-title {
+    color: #fff;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 .cta-right {
