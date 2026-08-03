@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Got Your Back — Executive Assistance, Operations & Leadership Offsites</title>
+    <meta name="description" content="Executive Assistance, Executive Operations en Strategic Leadership Offsites — remote ondersteuning voor founders, CEO's en leiderschapsteams, door Manita.">
+    <link rel="canonical" href="https://bymanita.com/nl/">
+    <link rel="alternate" hreflang="en" href="https://bymanita.com/">
+    <link rel="alternate" hreflang="nl" href="https://bymanita.com/nl/">
+    <link rel="alternate" hreflang="x-default" href="https://bymanita.com/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Jost:wght@200;300;400;500&family=Playfair+Display:ital,wght@1,400;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/main.css">
+    <meta name="robots" content="noindex" />
+</head>
+<body>
+<script>document.documentElement.classList.add('js')</script>
+
+<a class="skip-link" href="#main-content">Ga naar hoofdinhoud</a>
+
+<header>
+    <nav>
+        <a class="nav-logo logo" href="#" aria-label="Got Your Back by Manita – homepagina">
+            <span class="logo-script" aria-hidden="true">Got Your Back</span>
+            <span class="logo-by" aria-hidden="true"> · by Manita</span>
+        </a>
+
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu">
+            <span class="sr-only">Menu openen</span>
+            <span class="nav-toggle-icon" aria-hidden="true"></span>
+        </button>
+
+        <ul id="nav-menu" class="nav-links" role="list">
+            <li><a href="#services" class="nav-links__link">Diensten</a></li>
+            <li><a href="#about" class="nav-links__link">Over mij</a></li>
+            <li class="lang-switch" role="presentation">
+                <a href="../" hreflang="en" lang="en">EN</a><span class="lang-sep" aria-hidden="true">/</span><span class="lang-current" aria-current="true">NL</span>
+            </li>
+            <li><a class="btn btn--filled btn--sm" href="#contact">Plan een kennismaking</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main id="main-content">
+
+    <!-- HERO -->
+    <section class="hero o-split">
+        <div class="hero-blob-1" aria-hidden="true"></div>
+        <div class="hero-blob-2" aria-hidden="true"></div>
+        <div class="hero-blob-3" aria-hidden="true"></div>
+        <div class="hero-line-deco" aria-hidden="true"></div>
+
+        <div class="hero-left">
+            <p class="eyebrow" aria-hidden="true">Executive Operations</p>
+            <h1 id="hero-heading" class="hero-title">
+                Ik dek<br><em>je rug.</em>
+            </h1>
+            <p class="hero-subtitle">
+                Jouw operationele partner achter uitzonderlijk leiderschap.
+            </p>
+            <div class="hero-actions">
+                <a href="#contact" class="btn btn--filled">Plan een kennismaking</a>
+                <a href="#services" class="btn btn--ghost">Bekijk diensten</a>
+            </div>
+            <div class="hero-for">
+                <p class="hero-for-label">Voor</p>
+                <ul class="hero-for-tags" role="list" aria-label="Voor wie">
+                    <li class="tag">Ondernemers</li>
+                    <li class="tag">Oprichters</li>
+                    <li class="tag">CEO's</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="hero-right">
+            <div class="hero-photo-wrap">
+                <img class="hero-photo" src="../manita.jpg" alt="Manita, oprichter van Got Your Back" decoding="async">
+            </div>
+        </div>
+    </section>
+
+    <!-- STATS -->
+    <section class="intro-strip reveal" aria-label="Ervaringscijfers">
+        <div class="intro-stat">
+            <strong class="intro-stat-number">10+</strong>
+            <p class="intro-stat-label">Jaar ervaring</p>
+        </div>
+        <div class="intro-divider" aria-hidden="true"></div>
+        <div class="intro-stat">
+            <strong class="intro-stat-number">3</strong>
+            <p class="intro-stat-label">diensten</p>
+        </div>
+        <div class="intro-divider" aria-hidden="true"></div>
+        <div class="intro-stat">
+            <strong class="intro-stat-number">∞</strong>
+            <p class="intro-stat-label">Gemoedsrust</p>
+        </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="services o-section" id="services">
+        <header class="section-header reveal">
+            <div>
+                <p class="eyebrow">Diensten</p>
+                <h2 id="services-heading" class="section-title">Drie niveaus van <em>partnerschap</em></h2>
+            </div>
+        </header>
+        <ul class="service-cards o-trio reveal" id="service-cards" role="list"></ul>
+    </section>
+
+    <!-- SERVICE DETAIL DRAWER -->
+    <div class="scrim" id="service-scrim"></div>
+    <aside class="drawer" id="service-drawer" aria-hidden="true">
+        <div class="drawer-head">
+            <div class="drawer-head-top">
+                <h3 id="drawer-title"></h3>
+                <button class="drawer-close" id="drawer-close" type="button" aria-label="Sluit details">&times;</button>
+            </div>
+            <p class="service-subtitle" id="drawer-subtitle"></p>
+            <nav class="drawer-nav" id="drawer-nav" aria-label="Spring naar categorie"></nav>
+        </div>
+        <div class="drawer-body" id="drawer-body"></div>
+    </aside>
+
+    <!-- ABOUT -->
+    <section class="about o-split" id="about">
+        <div class="about-left reveal">
+            <h2 class="section-title">Over mij</h2>
+            <p class="about-bio">
+                Mijn naam is Manita. Ik ben geboren in een klein dorp net onder Amsterdam, maar verhuisde met mijn ouders een aantal keer binnen Nederland voordat ik zelf naar het buitenland vertrok. Ik studeerde Hotel Hospitality Management en volgde daarna een tweede studie, Eventmanagement.</p>
+
+            <p class="about-bio">Op mijn 21e werd ik aangenomen als stewardess en verhuisde ik naar Dubai om van daaruit de wereld rond te vliegen. Dat is waar mijn internationale carrière begon. Op mijn 26e verhuisde ik naar Londen, waar ik mijn carrière als assistant succesvol een vliegende start gaf in de grote internationale corporate wereld. Begin 2019 verhuisde ik naar Amsterdam en 2,5 jaar later, eind 2021, besloot ik mijn eigen bedrijf te starten als freelance executive assistant, om via kortlopende projecten ervaring op te doen bij verschillende bedrijven.</p>
+            <p class="about-bio">Snel vooruitspoelend naar nu, en na heel veel mooie ervaringen, is mijn doel met de remote diensten van Got Your Back by Manita om langdurige partnerships op te bouwen met de vrijheid om vanaf elke locatie te werken. In mijn vrije tijd hou ik van reizen, koken, op het water zijn/zeilen en in beweging blijven met sporten zoals yoga en pilates.
+            </p>
+        </div>
+        <div class="about-right reveal">
+            <h2 id="about-heading" class="section-title">Hoe ik <em>werk</em></h2>
+
+            <p>Ik breng mijn internationaal georiënteerde ervaring mee binnen scale-ups, corporate organisaties en founder-led bedrijven. Dit gaat veel verder dan traditionele executive assistance. Ik ondersteun leidinggevenden niet alleen, ik breng structuur aan, zorg voor duidelijkheid, verbeter de operationele flow en help leiders op hun best te presteren. <br>
+            Ik beweeg me van nature tussen operationele, strategische en mensgerichte verantwoordelijkheden. Ik hecht waarde aan een partnership naast een leidinggevende, waarin creativiteit, wederzijds respect en de drive om te bouwen leven. Ik werk zelfstandig, waarbij vertrouwen een grote rol speelt — vertrouwen dat ik opbouw door heldere en eerlijke communicatie. </p>
+
+            <ul>
+                <li>Beschikbaar vanaf 10 uur per week</li>
+                <li>Ik werk remote-first en bied flexibele, naadloze ondersteuning aan klanten wereldwijd. Vanuit Nederland ben ik beschikbaar voor persoonlijke afspraken, workshops en samenwerking op locatie, en reis ik regelmatig internationaal wanneer een project dat vraagt.</li>
+                <li>Mijn tarief is <strong>€ 95,00</strong> per uur, exclusief btw en reiskosten</li>
+                <li>Maatwerkpakketten mogelijk op aanvraag</li>
+            </ul>
+
+            <a href="#contact" class="btn btn--filled">Plan een kennismaking</a>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section o-split o-section" id="contact">
+        <div class="cta-blob" aria-hidden="true"></div>
+        <div class="cta-blob cta-blob-2" aria-hidden="true"></div>
+        <div id="cta-heading" class="cta-title reveal">
+            <h2>Rust creëren achter ambitieuze <em>leiders</em></h2>
+
+            <p>Ik ondersteun founders en leiderschapsteams met Executive Assistance, Executive Operations en Strategic Leadership Offsites. Structuur, duidelijkheid en operationele excellentie voor bedrijven die klaar zijn om te groeien.</p>
+
+        </div>
+        <div class="cta-right reveal">
+            <p class="cta-sub">Plan een vrijblijvend kennismakingsgesprek. Ik luister naar wat je nodig hebt en vertel je eerlijk of en hoe ik je kan helpen.</p>
+            <a href="mailto:gotyourback@bymanita.com" class="btn btn--white">Plan een kennismaking</a>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <div class="footer-logo logo">
+        <span class="logo-script">Got Your Back</span>
+        <span class="logo-by">&nbsp;· by Manita</span>
+    </div>
+    <small class="footer-copy">© 2025 Got Your Back by Manita — Alle rechten voorbehouden</small>
+</footer>
+
+<script>
+    const SERVICES = [
+        {
+            name: "Executive Assistance",
+            subtitle: "Ondersteuning van de leider.",
+            tagline: "Executive ondersteuning",
+            preview: ["Complex agendabeheer", "Strategische prioritering", "Mailbeheer", "Vergadervoorbereiding"],
+            categories: [
+                { name: "Executive ondersteuning", bullets: ["Complex agendabeheer", "Strategische prioritering", "Mailbeheer", "Vergadervoorbereiding", "Beheer van actiepunten", "Correspondentie namens de leiding", "Vertrouwelijke ondersteuning"] },
+                { name: "Reizen & logistiek", bullets: ["Internationale reisplanning", "Complexe reisschema's", "Visumcoördinatie"] },
+                { name: "Stakeholdermanagement", bullets: ["Coördinatie met de raad van bestuur", "Communicatie met investeerders", "Planning voor het leiderschapsteam", "Communicatie met externe partners", "Optreden als poortwachter"] },
+                { name: "Vergaderbeheer", bullets: ["Leiderschapsvergaderingen", "Bestuursvergaderingen", "Agenda's voorbereiden", "Eigenaarschap over de opvolging"] },
+                { name: "Bedrijfsadministratie", bullets: ["Contracten", "Onkosten", "Ondersteuning bij facturatie", "Documentbeheer", "Interne administratie"] },
+            ]
+        },
+        {
+            name: "Executive Operations",
+            subtitle: "Het bedrijf versterken door het opzetten van een Executive Office en een operationele structuur.",
+            tagline: "Operationele structuur",
+            preview: ["Operationele ondersteuning vanaf de basis opbouwen", "Ondersteuningsprocessen herstructureren", "Huidige werkwijzen evalueren", "Schaalbare workflows ontwerpen"],
+            categories: [
+                { name: "Operationele structuur", bullets: ["Operationele ondersteuning vanaf de basis opbouwen", "Ondersteuningsprocessen herstructureren", "Huidige werkwijzen evalueren", "Schaalbare workflows ontwerpen", "Operationele playbooks opstellen", "Ontwikkelen van SOP's", "Efficiëntie verbeteren"] },
+                { name: "Procesverbetering", bullets: ["Optimalisatie van workflows", "Interne processen", "Documentatie", "Cross-functionele samenwerking", "Operationele consistentie"] },
+                { name: "Ondersteuning voor oprichters", intro: "Ik help oprichters de overstap te maken van alles zelf doen naar effectief leidinggeven.", bullets: ["Structuur aanbrengen rond prioriteiten", "Het ritme van besluitvorming verbeteren", "Organiseren van directievergaderingen", "Operationele planning", "Systemen voor verantwoording"] },
+                { name: "Opbouwen van executive support functies", intro: "Ik zet mijn jarenlange ervaring in om deze functie op te bouwen.", bullets: ["Werving van een Executive Assistant", "De functie definiëren", "Onboarding opzetten", "Workflows ontwerpen", "Best practices vaststellen", "Begeleiden van nieuwe Executive Assistants"] },
+                { name: "Bedrijfsritme", intro: "Ik breng structuur aan rond:", bullets: ["Wekelijkse leiderschapsvergaderingen", "Maandelijkse reviews", "Kwartaalplanning", "Jaarplanning", "OKR-ritme", "Communicatieritme"] },
+                { name: "Strategisch projectmanagement", intro: "Ik leid en coördineer impactvolle bedrijfsinitiatieven van planning tot uitvoering." },
+            ]
+        },
+        {
+            name: "Strategic Leadership Offsites",
+            subtitle: "Het leiderschapsteam op één lijn brengen.",
+            tagline: "Strategie & opzet",
+            preview: ["Doelstellingen", "Thema's", "Agenda", "Gewenste uitkomsten"],
+            categories: [
+                { name: "Strategie & opzet", intro: "Ik help leiderschapsteams bij het bepalen van:", bullets: ["Doelstellingen", "Thema's", "Agenda", "Gewenste uitkomsten", "Succescriteria"] },
+                { name: "Volledig projectmanagement", bullets: ["Locatiekeuze", "Budgetbeheer", "Coördinatie met leveranciers", "Reisregelingen", "Accommodatie", "Logistiek", "Tijdlijnen", "Communicatie"] },
+                { name: "Leiderschapservaring", intro: "Het ontwerpen van een ervaring in plaats van simpelweg een locatie boeken.", bullets: ["Diners voor de directie", "Teamervaringen", "Workshops", "Gastsprekers", "Wellness- en mindfulnessactiviteiten", "Reflectiesessies"] },
+                { name: "Operationele uitvoering", intro: "Ervoor zorgen dat alles soepel verloopt.", bullets: ["Coördinatie ter plaatse", "Sprekersmanagement", "Contact met de locatie", "Materialen", "Last-minute probleemoplossing"] },
+                { name: "Nazorg", bullets: ["Opvolging van actieplannen", "Opvolgen van besluiten", "Documentatie van de opvolging", "Check-ins over verantwoording", "Planning voor het volgende kwartaal"] },
+            ]
+        }
+    ];
+
+    const cardsEl = document.getElementById('service-cards');
+    const scrimEl = document.getElementById('service-scrim');
+    const drawerEl = document.getElementById('service-drawer');
+    const drawerTitleEl = document.getElementById('drawer-title');
+    const drawerSubtitleEl = document.getElementById('drawer-subtitle');
+    const drawerNavEl = document.getElementById('drawer-nav');
+    const drawerBodyEl = document.getElementById('drawer-body');
+    const drawerCloseEl = document.getElementById('drawer-close');
+
+    function slugify(s) {
+        return s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+    }
+
+    SERVICES.forEach((service, i) => {
+        const totalBullets = service.categories.reduce((n, c) => n + (c.bullets ? c.bullets.length : 0), 0);
+        const li = document.createElement('li');
+        li.className = 'service-card';
+        li.innerHTML = `
+            <h3 class="service-name">${service.name}</h3>
+            <p class="service-subtitle">${service.subtitle}</p>
+            <p class="service-tagline">${service.tagline}</p>
+            <ul class="service-list" role="list">${service.preview.map(b => `<li>${b}</li>`).join('')}</ul>
+            <p class="service-more">+ ${totalBullets - service.preview.length} meer, verspreid over ${service.categories.length} onderdelen</p>
+            <button class="service-detail-btn" type="button" data-index="${i}">Bekijk alle details</button>
+        `;
+        cardsEl.appendChild(li);
+    });
+
+    function openDrawer(service) {
+        drawerTitleEl.textContent = service.name;
+        drawerSubtitleEl.textContent = service.subtitle;
+        drawerNavEl.innerHTML = service.categories.map(cat => `<a href="#${slugify(cat.name)}">${cat.name}</a>`).join('');
+        drawerBodyEl.innerHTML = service.categories.map(cat => `
+            <div class="drawer-cat" id="${slugify(cat.name)}">
+                <h4>${cat.name}</h4>
+                ${cat.intro ? `<p class="intro">${cat.intro}</p>` : ''}
+                ${cat.bullets ? `<ul role="list">${cat.bullets.map(b => `<li>${b}</li>`).join('')}</ul>` : ''}
+            </div>
+        `).join('');
+        drawerEl.classList.add('is-open');
+        drawerEl.setAttribute('aria-hidden', 'false');
+        scrimEl.classList.add('is-open');
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeDrawer() {
+        drawerEl.classList.remove('is-open');
+        drawerEl.setAttribute('aria-hidden', 'true');
+        scrimEl.classList.remove('is-open');
+        document.body.style.overflow = '';
+    }
+
+    cardsEl.addEventListener('click', (e) => {
+        const btn = e.target.closest('.service-detail-btn');
+        if (!btn) return;
+        openDrawer(SERVICES[btn.dataset.index]);
+    });
+
+    drawerNavEl.addEventListener('click', (e) => {
+        const a = e.target.closest('a');
+        if (!a) return;
+        e.preventDefault();
+        const target = document.getElementById(a.getAttribute('href').slice(1));
+        if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+
+    drawerCloseEl.addEventListener('click', closeDrawer);
+    scrimEl.addEventListener('click', closeDrawer);
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') closeDrawer();
+    });
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry, i) => {
+            if (entry.isIntersecting) {
+                setTimeout(() => entry.target.classList.add('visible'), i * 80);
+            }
+        });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+    const toggle = document.querySelector('.nav-toggle');
+    const menu = document.getElementById('nav-menu');
+    toggle.addEventListener('click', () => {
+        const open = toggle.getAttribute('aria-expanded') === 'true';
+        toggle.setAttribute('aria-expanded', String(!open));
+        menu.classList.toggle('is-open', !open);
+    });
+    menu.querySelectorAll('a').forEach(a =>
+        a.addEventListener('click', () => {
+            toggle.setAttribute('aria-expanded', 'false');
+            menu.classList.remove('is-open');
+        })
+    );
+</script>
+</body>
+</html>

@@ -3,7 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Got Your Back — by Manita</title>
+    <title>Got Your Back — Executive Assistance, Operations & Leadership Offsites</title>
+    <meta name="description" content="Executive Assistance, Executive Operations and Strategic Leadership Offsites — remote support for founders, CEOs and leadership teams, by Manita.">
+    <link rel="canonical" href="https://bymanita.com/">
+    <link rel="alternate" hreflang="en" href="https://bymanita.com/">
+    <link rel="alternate" hreflang="nl" href="https://bymanita.com/nl/">
+    <link rel="alternate" hreflang="x-default" href="https://bymanita.com/">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Jost:wght@200;300;400;500&family=Playfair+Display:ital,wght@1,400;1,500&display=swap" rel="stylesheet">
@@ -13,24 +18,26 @@
 <body>
 <script>document.documentElement.classList.add('js')</script>
 
-<a class="skip-link" href="#main-content">Ga naar hoofdinhoud</a>
+<a class="skip-link" href="#main-content">Skip to main content</a>
 
 <header>
     <nav>
-        <a class="nav-logo logo" href="#" aria-label="Got Your Back by Manita – homepagina">
+        <a class="nav-logo logo" href="#" aria-label="Got Your Back by Manita – homepage">
             <span class="logo-script" aria-hidden="true">Got Your Back</span>
             <span class="logo-by" aria-hidden="true"> · by Manita</span>
         </a>
-        
+
         <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu">
-            <span class="sr-only">Menu openen</span>
+            <span class="sr-only">Open menu</span>
             <span class="nav-toggle-icon" aria-hidden="true"></span>
         </button>
 
         <ul id="nav-menu" class="nav-links" role="list">
-            <li><a href="#services">Services</a></li>
-            <li><a href="#about">About me</a></li>
-            <!-- <li><a href="#testimonials">Ervaringen</a></li> -->
+            <li><a href="#services" class="nav-links__link">Services</a></li>
+            <li><a href="#about" class="nav-links__link">About me</a></li>
+            <li class="lang-switch" role="presentation">
+                <span class="lang-current" aria-current="true">EN</span><span class="lang-sep" aria-hidden="true">/</span><a href="nl/" hreflang="nl" lang="nl">NL</a>
+            </li>
             <li><a class="btn btn--filled btn--sm" href="#contact">Schedule an introduction</a></li>
         </ul>
     </nav>
@@ -59,7 +66,7 @@
             </div>
             <div class="hero-for">
                 <p class="hero-for-label">For</p>
-                <ul class="hero-for-tags" role="list" aria-label="Voor wie">
+                <ul class="hero-for-tags" role="list" aria-label="Who this is for">
                     <li class="tag">Entrepreneurs</li>
                     <li class="tag">Founders</li>
                     <li class="tag">CEO's</li>
@@ -75,10 +82,10 @@
     </section>
 
     <!-- STATS -->
-    <section class="intro-strip reveal" aria-label="Ervaringscijfers">
+    <section class="intro-strip reveal" aria-label="Experience stats">
         <div class="intro-stat">
             <strong class="intro-stat-number">10+</strong>
-            <p class="intro-stat-label">Year's of experience</p>
+            <p class="intro-stat-label">Years of experience</p>
         </div>
         <div class="intro-divider" aria-hidden="true"></div>
         <div class="intro-stat">
@@ -100,49 +107,29 @@
                 <h2 id="services-heading" class="section-title">Three levels of <em>Partnerships</em></h2>
             </div>
         </header>
-        <ul class="service-cards o-trio reveal" role="list">
-            <li class="service-card">
-                <h3 class="service-name">Executive Assistance <br> Supporting the leader</h3>
-                <p class="service-tagline">Executive Support</p>
-                <ul class="service-list" role="list">
-                    <li>Complex calendar management</li>
-                    <li>Strategic prioritisation</li>
-                    <li>Inbox management</li>
-                    <li>Meeting preparation</li>
-                    <li>Action tracking</li>
-                    <li>Executive correspondence</li>
-                    <li>Confidential support</li>
-                </ul>
-            </li>
-            <li class="service-card">
-                <h3 class="service-name">Executive Operations</h3>
-                <p class="service-tagline">Structuur &amp; strategie</p>
-                <ul class="service-list" role="list">
-                    <li>Strategische planning &amp; operationele efficiency</li>
-                    <li>Procedures opzetten van nul</li>
-                    <li>Organisatie-herstructurering</li>
-                    <li>Processen bouwen die écht werken</li>
-                </ul>
-            </li>
-            <li class="service-card">
-                <h3 class="service-name">High-End Events</h3>
-                <p class="service-tagline">Luxury &amp; leadership offsites</p>
-                <ul class="service-list" role="list">
-                    <li>Internationale leadership offsites</li>
-                    <li>Luxe evenementen wereldwijd</li>
-                    <li>Coördinatie tot op elk detail</li>
-                    <li>Onvergetelijke ervaringen voor jouw team</li>
-                </ul>
-            </li>
-        </ul>
+        <ul class="service-cards o-trio reveal" id="service-cards" role="list"></ul>
     </section>
+
+    <!-- SERVICE DETAIL DRAWER -->
+    <div class="scrim" id="service-scrim"></div>
+    <aside class="drawer" id="service-drawer" aria-hidden="true">
+        <div class="drawer-head">
+            <div class="drawer-head-top">
+                <h3 id="drawer-title"></h3>
+                <button class="drawer-close" id="drawer-close" type="button" aria-label="Close details">&times;</button>
+            </div>
+            <p class="service-subtitle" id="drawer-subtitle"></p>
+            <nav class="drawer-nav" id="drawer-nav" aria-label="Jump to category"></nav>
+        </div>
+        <div class="drawer-body" id="drawer-body"></div>
+    </aside>
 
     <!-- ABOUT -->
     <section class="about o-split" id="about">
         <div class="about-left reveal">
             <h2 class="section-title">About me</h2>
             <p class="about-bio">
-                My name is Manita, I am 35 years old and I am born in a small village just under Amsterdam but moved around a few times within The Netherlands with my parents before moving abroad myself. I studied hotel hospitality management and did a second study, Eventmanagement.</p>
+                My name is Manita, I am born in a small village just under Amsterdam but moved around a few times within The Netherlands with my parents before moving abroad myself. I studied hotel hospitality management and did a second study, Eventmanagement.</p>
 
             <p class="about-bio">At the age of 21 I got hired as a stewardess and moved to Dubai to fly around the world from there. That’s where my international career started. When I was 26 I moved to London and successfully kickstarted my career as an assistant in the big international corporate world. I moved to Amsterdam in the beginning of 2019 and 2,5 years later, at the end of 2021, I decided to start my own company as freelance executive assistant in order to experience different companies by doing short term projects for them.</p>
             <p class="about-bio">Fast forward and lots of beautiful experiences later my goal with the remote services of Got Your Back by Manita is to build long lasting partnerships whilst having the freedom to work from anywhere. In my free time I love to travel, cooking, being on the water/ sailing and moving my body through sports like yoga and pilates. 
@@ -152,7 +139,7 @@
             <!-- <p class="eyebrow" aria-hidden="true">Why Got Your Back</p> -->
             <h2 id="about-heading" class="section-title">How I <em>work</em></h2>
 
-            <p>I bring my internationally oriented experience within scale-ups, corporate organisations and founder-led businesses. This goes far beyond traditional executive assistance. I do not simply support executives - I create structure, bring clarity, improve operational flow and help leaders perform at their best. <br>
+            <p>I bring my internationally oriented experience within scale-ups, corporate organisations and founder-led businesses. This goes far beyond traditional executive assistance. I do not simply support executives I create structure, bring clarity, improve operational flow and help leaders perform at their best. <br>
             I naturally operate between operational, strategic and people focused responsibilities. I value a partnership working alongside an executive, whereby creativity, mutual respect and the drive to built is alive. I work autonomously, whereby trust is plays a big role which I built through clear and honest communication. </p>
 
             <ul>
@@ -213,10 +200,125 @@
         <span class="logo-script">Got Your Back</span>
         <span class="logo-by">&nbsp;· by Manita</span>
     </div>
-    <small class="footer-copy">© 2025 Got Your Back by Manita — Alle rechten voorbehouden</small>
+    <small class="footer-copy">© 2025 Got Your Back by Manita — All rights reserved</small>
 </footer>
 
 <script>
+    const SERVICES = [
+        {
+            name: "Executive Assistance",
+            subtitle: "Supporting the leader.",
+            tagline: "Executive Support",
+            preview: ["Complex calendar management", "Strategic prioritisation", "Inbox management", "Meeting preparation"],
+            categories: [
+                { name: "Executive Support", bullets: ["Complex calendar management", "Strategic prioritisation", "Inbox management", "Meeting preparation", "Action tracking", "Executive correspondence", "Confidential support"] },
+                { name: "Travel & Logistics", bullets: ["International travel planning", "Complex itineraries", "Visa coordination"] },
+                { name: "Stakeholder Management", bullets: ["Board coordination", "Investor communication", "Leadership scheduling", "External partner communication", "Acting as gatekeeper"] },
+                { name: "Meeting Management", bullets: ["Leadership meetings", "Board meetings", "Preparing agendas", "Taking ownership of follow-ups"] },
+                { name: "Business Administration", bullets: ["Contracts", "Expenses", "Invoicing support", "Document management", "Internal administration"] },
+            ]
+        },
+        {
+            name: "Executive Operations",
+            subtitle: "Strengthening the business by building an Executive Office Setup and Operational Structure.",
+            tagline: "Operational Structure",
+            preview: ["Building operational support from the ground up", "Restructuring support flows", "Reviewing current ways of working", "Designing scalable workflows"],
+            categories: [
+                { name: "Operational Structure", bullets: ["Building operational support from the ground up", "Restructuring support flows", "Reviewing current ways of working", "Designing scalable workflows", "Creating operational playbooks", "SOP development", "Improving efficiency"] },
+                { name: "Process Improvement", bullets: ["Workflow optimisation", "Internal processes", "Documentation", "Cross-functional collaboration", "Operational consistency"] },
+                { name: "Founder Operations", intro: "I help founders transition from doing everything themselves to leading effectively.", bullets: ["Creating structure around priorities", "Improving decision-making rhythm", "Organising executive meetings", "Operational planning", "Accountability systems"] },
+                { name: "Building Executive Support Functions", intro: "I leverage my years of experience into building the function.", bullets: ["Hiring an Executive Assistant", "Defining the role", "Creating onboarding", "Designing workflows", "Establishing best practices", "Mentoring new Executive Assistants"] },
+                { name: "Business Rhythm", intro: "I create structure around:", bullets: ["Weekly Leadership Meetings", "Monthly Reviews", "Quarterly Planning", "Annual Planning", "OKR cadence", "Communication cadence"] },
+                { name: "Strategic Project Management", intro: "I lead and coordinate high-impact business initiatives from planning through execution." },
+            ]
+        },
+        {
+            name: "Strategic Leadership Offsites",
+            subtitle: "Aligning the leadership team.",
+            tagline: "Strategy & Design",
+            preview: ["Objectives", "Themes", "Agenda", "Desired outcomes"],
+            categories: [
+                { name: "Strategy & Design", intro: "Helping leadership teams define:", bullets: ["Objectives", "Themes", "Agenda", "Desired outcomes", "Success measures"] },
+                { name: "End-to-End Project Management", bullets: ["Venue sourcing", "Budget management", "Supplier coordination", "Travel arrangements", "Accommodation", "Logistics", "Timelines", "Communications"] },
+                { name: "Leadership Experience", intro: "Designing an experience rather than simply booking a venue.", bullets: ["Executive dinners", "Team experiences", "Workshops", "Guest speakers", "Wellness & mindful activities", "Reflection sessions"] },
+                { name: "Operational Delivery", intro: "Making sure everything runs seamlessly.", bullets: ["On-site coordination", "Speaker management", "Venue liaison", "Materials", "Last-minute problem solving"] },
+                { name: "Aftercare", bullets: ["Follow up on action plans", "Decision tracking", "Follow-up documentation", "Accountability check-ins", "Next-quarter planning"] },
+            ]
+        }
+    ];
+
+    const cardsEl = document.getElementById('service-cards');
+    const scrimEl = document.getElementById('service-scrim');
+    const drawerEl = document.getElementById('service-drawer');
+    const drawerTitleEl = document.getElementById('drawer-title');
+    const drawerSubtitleEl = document.getElementById('drawer-subtitle');
+    const drawerNavEl = document.getElementById('drawer-nav');
+    const drawerBodyEl = document.getElementById('drawer-body');
+    const drawerCloseEl = document.getElementById('drawer-close');
+
+    function slugify(s) {
+        return s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+    }
+
+    SERVICES.forEach((service, i) => {
+        const totalBullets = service.categories.reduce((n, c) => n + (c.bullets ? c.bullets.length : 0), 0);
+        const li = document.createElement('li');
+        li.className = 'service-card';
+        li.innerHTML = `
+            <h3 class="service-name">${service.name}</h3>
+            <p class="service-subtitle">${service.subtitle}</p>
+            <p class="service-tagline">${service.tagline}</p>
+            <ul class="service-list" role="list">${service.preview.map(b => `<li>${b}</li>`).join('')}</ul>
+            <p class="service-more">+ ${totalBullets - service.preview.length} more, across ${service.categories.length} areas</p>
+            <button class="service-detail-btn" type="button" data-index="${i}">View full details</button>
+        `;
+        cardsEl.appendChild(li);
+    });
+
+    function openDrawer(service) {
+        drawerTitleEl.textContent = service.name;
+        drawerSubtitleEl.textContent = service.subtitle;
+        drawerNavEl.innerHTML = service.categories.map(cat => `<a href="#${slugify(cat.name)}">${cat.name}</a>`).join('');
+        drawerBodyEl.innerHTML = service.categories.map(cat => `
+            <div class="drawer-cat" id="${slugify(cat.name)}">
+                <h4>${cat.name}</h4>
+                ${cat.intro ? `<p class="intro">${cat.intro}</p>` : ''}
+                ${cat.bullets ? `<ul role="list">${cat.bullets.map(b => `<li>${b}</li>`).join('')}</ul>` : ''}
+            </div>
+        `).join('');
+        drawerEl.classList.add('is-open');
+        drawerEl.setAttribute('aria-hidden', 'false');
+        scrimEl.classList.add('is-open');
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeDrawer() {
+        drawerEl.classList.remove('is-open');
+        drawerEl.setAttribute('aria-hidden', 'true');
+        scrimEl.classList.remove('is-open');
+        document.body.style.overflow = '';
+    }
+
+    cardsEl.addEventListener('click', (e) => {
+        const btn = e.target.closest('.service-detail-btn');
+        if (!btn) return;
+        openDrawer(SERVICES[btn.dataset.index]);
+    });
+
+    drawerNavEl.addEventListener('click', (e) => {
+        const a = e.target.closest('a');
+        if (!a) return;
+        e.preventDefault();
+        const target = document.getElementById(a.getAttribute('href').slice(1));
+        if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+
+    drawerCloseEl.addEventListener('click', closeDrawer);
+    scrimEl.addEventListener('click', closeDrawer);
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') closeDrawer();
+    });
+
     const observer = new IntersectionObserver((entries) => {
         entries.forEach((entry, i) => {
             if (entry.isIntersecting) {
