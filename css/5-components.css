@@ -487,7 +487,39 @@ header nav {
     font-size: 0.85rem;
     font-style: italic;
     color: var(--sand-warm);
-    margin: 0.9rem 0 0;
+    margin: 0.9rem 0 2rem;
+}
+
+.service-pricing {
+    margin-top: auto;
+    padding-top: 1.25rem;
+    border-top: 0.5px solid rgba(196,168,130,0.4);
+}
+
+.service-price {
+    margin: 0;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: var(--brown-deep);
+}
+
+.service-price span {
+    font-family: 'Jost', sans-serif;
+    font-size: 0.68rem;
+    font-weight: 300;
+    letter-spacing: 0.04em;
+    color: var(--brown-mid);
+    margin-left: 0.25rem;
+}
+
+.service-tailor {
+    font-size: 0.78rem;
+    font-weight: 300;
+    font-style: italic;
+    font-family: 'Cormorant Garamond', serif;
+    /* color: var(--sand-warm); */
+    margin-top: 0.3rem;
 }
 
 .service-detail-btn {
@@ -510,6 +542,64 @@ header nav {
 .service-detail-btn:hover {
     color: var(--accent-dark);
     border-color: var(--accent-dark);
+}
+
+.service-contact {
+    display: flex;
+    gap: 0.6rem;
+    margin-top: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.contact-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.5rem 0.9rem;
+    border: 0.5px solid rgba(196,168,130,0.5);
+    border-radius: var(--radius-btn);
+    color: var(--accent);
+    font-family: 'Jost', sans-serif;
+    font-size: 0.68rem;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    transition: background var(--transition-base), color var(--transition-base), border-color var(--transition-base);
+}
+
+.contact-btn svg {
+    width: 0.95rem;
+    height: 0.95rem;
+    flex-shrink: 0;
+}
+
+.contact-btn:hover {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: var(--cream);
+}
+
+.icon-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    border: 0.5px solid rgba(196,168,130,0.5);
+    color: var(--accent);
+    transition: background var(--transition-base), color var(--transition-base), border-color var(--transition-base);
+}
+
+.icon-btn svg {
+    width: 1.1rem;
+    height: 1.1rem;
+}
+
+.icon-btn:hover {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: var(--cream);
 }
 
 
@@ -920,6 +1010,24 @@ dd.value-desc {
     color: rgba(255,255,255,0.92);
     line-height: 1.85;
     margin-bottom: 2rem;
+}
+
+.cta-actions {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.icon-btn--light {
+    border-color: rgba(255,255,255,0.5);
+    color: #fff;
+}
+
+.icon-btn--light:hover {
+    background: #fff;
+    border-color: #fff;
+    color: var(--accent);
 }
 
 
